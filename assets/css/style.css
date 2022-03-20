@@ -1,0 +1,95 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.quiz-header {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.quiz-header #countdown {
+    font-weight: 500;
+    font-style: italic;
+}
+.quiz-header #score {
+
+}
+
+
+.container {
+
+    margin: 0 auto;
+    padding: 0 3px;
+    display: flex;
+    height: 80vh;
+    width: 80vw;
+    justify-content: center;
+    align-items: center;
+}
+
+#start-btn {
+
+    padding: 10px 15px;
+    background-color: darkslateblue;
+    color: white;
+    border-radius: 6px;
+}
+.quiz-container {
+
+    width: 650px;
+    margin: 0 auto;
+    padding: 10px 15px;
+
+}
+
+.quiz-container #questions {
+    font-weight: 600;
+    padding: 5px ;
+}
+.buttons {
+    margin: 10px;
+
+}
+.btn {
+    background-color: rgb(192, 182, 255);
+    text-align: left;
+    width: 100%;
+    border: 1px solid;
+    border-radius: 6px;
+    font-size: 12px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.btn:hover{
+    background-color: rgb(117, 101, 224);
+    cursor: pointer;
+    color: white;
+}
+.btn:active{
+    background-color: rgb(101, 130, 224);
+    cursor: pointer;
+    color: white;
+}
+.quiz-repeat{
+    text-align: center;
+    margin: 0 auto;
+}
+.quiz-repeat a{
+    font-size: 10px;
+    font-weight: 600px;
+    background-color: rgb(117, 101, 224);
+    color: white;
+    border-radius: 6px;
+    padding: 10px;
+}
+footer{
+    margin-top: 2px;
+}
+#progress {
+    padding: 10px;
+    font-weight: 500;
+    text-align: center;
+}

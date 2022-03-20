@@ -4,9 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    
+    <header>
+<div class="quiz-header">
+    <p id="score">Your Score</p>
+    <p id="countdown">Timer</p>
+</div>
+    </header>
+
+    <main>
+        <!--code quiz start-->
+    <div class="container">
+        
+        <div id="quiz-container">
+            <div id= "quiz">
+               <h1>JavaScript Quiz</h1> 
+               <p id="questions">What is the first question?</p>
+                   <div class="buttons">
+                   <button id= "btn0" class="btn">
+                        a. <span id="choice0"></span>
+                    </button>
+                    <button id= "btn1" class="btn">
+                        b. <span id="choice0"></span>
+                    </button>
+                    <button id= "btn2" class="btn">
+                        c. <span id="choice0"></span>
+                    </button>
+                    <button id= "btn3" class="btn">
+                        d. <span id="choice0"></span>
+                    </button>
+                   </div>
+
+               
+            </div>
+            <button id="start-btn" >Start Quiz</button>   
+        </div>
+
+    </div>
+    </main>
+
+
+
+<footer>
+    <p id="progress">Question x of y</p>
+</footer>
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
