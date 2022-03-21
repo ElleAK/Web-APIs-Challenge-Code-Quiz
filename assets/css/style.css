@@ -5,78 +5,65 @@
     text-align: center;
     display: flex;
     justify-content: space-between;
-    padding: 10px;
-    margin-top: 30px;
-
+    padding: 10px 30px 30px 10px;
+    margin: 30px 10px 40px;
 }
-
-/*.quiz-header {
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    margin-top: 30px;
-}*/
 
 #countdown {
     color: blueviolet;
 }
 
 .container {
-
     margin: 0 auto;
-    padding: 0 3px;
-    display: flex;
-    height: 80vh;
+    padding: 0 auto;
+    height: 60vh;
     width: 80vw;
     justify-content: center;
-    align-items: center;
-}
-
-.quiz-container {
-
-    width: 650px;
-    margin: 0 auto;
-    padding: 10px 15px;
-}
-
-#quiz h1{
     text-align: center;
 }
 
+#quiz {
+    font-style: bold;
+}
+#begin {
+    font-size: 16px;
+    font-weight: 600;
+}
+#begin h1{
+    font-weight: bolder;
+}
+
 .start-btn-btn {
+    font-size: 18px;
     padding: 10px 15px;
     background-color: darkslateblue;
     color: white;
     border-radius: 6px;
 }
-.begin {
-    text-align: center;
-}
 
-/*.hide {
+.hide {
     display: none;
-}*/
+}
 
-.quiz-container #questions {
-    font-weight: 800;
+#questions {
+    font-weight: bolder;
     font-size: larger;
-    padding: 5px ;
-    font-style: bold;
-}
-.buttons {
-    margin: 10px;
-
-}
-.btn {
-    background-color: rgb(192, 182, 255);
     text-align: left;
+}
+
+#buttons {
+    max-width: fit-content;
+}
+
+#quiz-container .btn {
+    background-color: rgb(192, 182, 255);
     width: 100%;
     border: 1px solid;
     border-radius: 6px;
-    font-size: 12px;
+    font-size: 14px;
     padding: 10px;
     margin: 5px;
+    text-align: left;
 }
 
 .btn:hover{
@@ -89,18 +76,19 @@
     cursor: pointer;
     color: white;
 }
+#score {
+    padding: 30px;
+}
 .quiz-repeat{
-    text-align: center;
-    margin: 0 auto;
+    margin-bottom: 20px;
 }
 .quiz-repeat a{
-    font-size: 10px;
+    font-size: 16px;
     font-weight: 600px;
-    background-color: rgb(117, 101, 224);
+    background-color: darkslateblue;
     color: white;
     border-radius: 6px;
-    padding: 10px;
+    padding: 10px 15px;
+    text-decoration: none;
 }
-footer{
-    margin-top: 2px;
-}
+

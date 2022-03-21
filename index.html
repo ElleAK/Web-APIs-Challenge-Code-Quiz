@@ -11,31 +11,24 @@
 <header>
 <div class="high-score-timer">
     <p id="high-score">View High Score</p>
-    <p id="countdown">Time:</p>
+    <p id="countdown">Time 0:00 </p>
 </div>
 </header>
 
-    
         <!--code quiz start-->
     <div class="container">
-        
         <div id="quiz-container">
             <div id= "quiz">
-               <h1>JavaScript Quiz</h1>
-               <div class="begin">
+               <div id="begin" class="quiz-start" >
+                <h1>JavaScript Quiz</h1>
                    <p>You have 2 minutes to complete the quiz.<br>
                     For every wrong answer 10 seconds will be deducted! 
                     <br>Good Luck!</p>
                    <button id="start-btn" class="start-btn-btn">Start!</button>
                </div>
-            
-                <!--<div class="quiz-header">
-                    <p id="progress">Question x of y</p>
-                    <p id="countdown">Time:</p>
-                </div>-->
-                    <p id="questions" class="hide">Questions?</p>
+                        <p id="questions" class="hide"></p>
 
-                   <div class="buttons">
+                   <div id="buttons" class="hide">
                    <button id= "btn0" class="btn">
                         1. <span id="choice0"></span>
                     </button>
@@ -50,14 +43,9 @@
                     </button>
                    </div>
                 </div>
-                
-            </div>
+            </div>         
         </div>
-                <hr>
-                   <footer>
-
-                   </footer>
-                </hr>
+                <hr></hr>                  
 
     <script src="assets/js/script.js"></script>
 </body>

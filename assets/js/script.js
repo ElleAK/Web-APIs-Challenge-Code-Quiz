@@ -1,15 +1,18 @@
 //start quiz
-const startButton = document.getElementById("start-btn")
-const questionContainerEl = document.getElementById("quiz-container")
+const startButton = document.getElementById("begin")
+const questionContainerEl = document.getElementById("buttons")
+const questionParaEl = document.getElementById("questions")
 
 startButton.addEventListener("click", startGame)
+//questionContainerEl.addEventListener("click", displayQuestion)//
 
 function startGame() {
     console.log("started");
     startButton.classList.add("hide");
     questionContainerEl.classList.remove("hide");
+    questionParaEl.classList.remove("hide");
     startCountdown();
-    displayQuestion()
+    displayQuestion();
 }
 
 //countdown
@@ -73,7 +76,7 @@ class Question {
 };
 
 // display question
-function displayQuestion() {
+    function displayQuestion() {
     console.log()
     if (quiz.isEnded()) {
         showScores();
