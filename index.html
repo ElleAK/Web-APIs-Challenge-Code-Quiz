@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-<!--<header>
-<div class="quiz-header">
-    <p id="score">Your Score</p>
-    <p id="countdown">Timer</p>
+<header>
+<div class="high-score-timer">
+    <p id="high-score">View High Score</p>
+    <p id="countdown">Time:</p>
 </div>
-</header> --> 
+</header>
 
     
         <!--code quiz start-->
@@ -22,16 +22,17 @@
         <div id="quiz-container">
             <div id= "quiz">
                <h1>JavaScript Quiz</h1>
-               <div id="begin" class="hide">
+               <div class="begin">
                    <p>You have 2 minutes to complete the quiz.<br>
                     For every wrong answer 10 seconds will be deducted! 
                     <br>Good Luck!</p>
                    <button id="start-btn" class="start-btn-btn">Start!</button>
                </div>
-                <div class="quiz-header">
+            
+                <!--<div class="quiz-header">
                     <p id="progress">Question x of y</p>
                     <p id="countdown">Time:</p>
-                </div>
+                </div>-->
                     <p id="questions" class="hide">Questions?</p>
 
                    <div class="buttons">
@@ -49,6 +50,7 @@
                     </button>
                    </div>
                 </div>
+                
             </div>
         </div>
                 <hr>
@@ -56,10 +58,6 @@
 
                    </footer>
                 </hr>
-
-         <!--<div>
-            <button id="start-btn" >Start Quiz</button>   
-        </div>-->
 
     <script src="assets/js/script.js"></script>
 </body>

@@ -1,7 +1,6 @@
 //start quiz
-const startButton = document.getElementById("begin")
-const questionContainerEl = document.getElementById
-("quiz-container")
+const startButton = document.getElementById("start-btn")
+const questionContainerEl = document.getElementById("quiz-container")
 
 startButton.addEventListener("click", startGame)
 
@@ -9,9 +8,34 @@ function startGame() {
     console.log("started");
     startButton.classList.add("hide");
     questionContainerEl.classList.remove("hide");
-    displayQuestion();
     startCountdown();
+    displayQuestion()
 }
+
+//countdown
+let time = 2;
+let quizTimeInMinutes = time * 60 * 60;
+quizTime = quizTimeInMinutes / 60;
+
+let counting = document.getElementById("countdown");
+function startCountdown() {
+    let quizTimer = setInterval(function() {
+        if(quizTime <=0) {
+            clearInterval(quizTimer);
+            showScores();
+
+        }else{
+            quizTime--;
+            let sec = Math.floor(quizTime % 60);
+            let min = Math.floor(quizTime / 60)% 60;
+            counting.innerHTML = `Time: ${min}:${sec}`;
+        }
+    }, 1000)
+};
+
+//startCountdown();//
+
+
 
 //quiz class
 class Quiz {
@@ -50,6 +74,7 @@ class Question {
 
 // display question
 function displayQuestion() {
+    console.log()
     if (quiz.isEnded()) {
         showScores();
     }else{
@@ -65,7 +90,7 @@ function displayQuestion() {
             guess("btn" + i, choices[i]);
         }
 
-        showProgress();
+       // showProgress();//
     }
 };
 //guess function
@@ -77,12 +102,12 @@ function guess(id, guess) {
     }
 };
 // show quiz progress
-function showProgress() {
+/*function showProgress() {
     let currentQuestionNumber = quiz.questionIndex + 1;
     let progressEl = document.getElementById("progress");
     progressEl.innerHTML = 
     `Question ${currentQuestionNumber} of ${quiz.questions.length}`;
-};
+};*/
 
 // show score
 function showScores() {
@@ -121,25 +146,3 @@ let quiz = new Quiz(questions);
 //display question
 displayQuestion();
 
-//countdown
-let time = 2;
-let quizTimeInMinutes = time * 60 * 60;
-quizTime = quizTimeInMinutes / 60;
-
-let counting = document.getElementById("countdown");
-function startCountdown() {
-    let quizTimer = setInterval(function() {
-        if(quizTime <=0) {
-            clearInterval(quizTimer);
-            showScores();
-
-        }else{
-            quizTime--;
-            let sec = Math.floor(quizTime % 60);
-            let min = Math.floor(quizTime / 60)% 60;
-            counting.innerHTML = `TIME: ${min}:${sec}`;
-        }
-    }, 1000)
-};
-
-startCountdown();
