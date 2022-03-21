@@ -18,3 +18,4 @@ Made using HTML, CSS, JavaScript
 Website: https://elleak.github.io/Web-APIs-Challenge-Code-Quiz/
 Github URL: https://github.com/ElleAK/Web-APIs-Challenge-Code-Quiz.git
 
+![image](https://user-images.githubusercontent.com/91795114/159202034-73b26ae3-e5d8-4638-ad3e-4595c5cd3da9.png)
