@@ -1,5 +1,5 @@
 //start quiz
-const startButton = document.getElementById("start-btn")
+const startButton = document.getElementById("begin")
 const questionContainerEl = document.getElementById
 ("quiz-container")
 
@@ -10,6 +10,7 @@ function startGame() {
     startButton.classList.add("hide");
     questionContainerEl.classList.remove("hide");
     displayQuestion();
+    startCountdown();
 }
 
 //quiz class
